@@ -18,8 +18,9 @@ namespace Entity
         public string FechaDeNacimientoEstudiante { get; set; }
         public string DireccionEstudiante { get; set; }
         public string TelefonoEstudiante { get; set; }
+        public string x { get; set; }
 
 
 
-    }
+}
 }
