@@ -46,14 +46,71 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FrmDocentes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmDocentes.Designer.cs">
+      <DependentUpon>FrmDocentes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FrmEstudiantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FrmEstudiantes.Designer.cs">
+      <DependentUpon>FrmEstudiantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\LoginAdmin.Designer.cs">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\LoginEstudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\LoginEstudiante.Designer.cs">
+      <DependentUpon>LoginEstudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\loginProfesor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\loginProfesor.Designer.cs">
+      <DependentUpon>loginProfesor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logins\loginprincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logins\loginprincipal.Designer.cs">
+      <DependentUpon>loginprincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmDocentes.resx">
+      <DependentUpon>FrmDocentes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FrmEstudiantes.resx">
+      <DependentUpon>FrmEstudiantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\LoginAdmin.resx">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\LoginEstudiante.resx">
+      <DependentUpon>LoginEstudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\loginprincipal.resx">
+      <DependentUpon>loginprincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logins\loginProfesor.resx">
+      <DependentUpon>loginProfesor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

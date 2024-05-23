@@ -19,8 +19,9 @@ namespace Entity
         public string DireccionEstudiante { get; set; }
         public string TelefonoEstudiante { get; set; }
         public string x { get; set; }
+        public string CorreoElectronico { get; set; }
 
 
 
-}
+    }
 }
