@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,5 +30,17 @@ namespace Gestionp
             ventanaPrincipal.ShowDialog();
            
         }
+
+        private void Btn_Consultar_Click(object sender, EventArgs e)
+        {
+            EstudianteService estudianteservi = new EstudianteService(ConfigConnection.connectionString);
+            dataGridView1.DataSource = estudianteservi.Consultar();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
+
 }

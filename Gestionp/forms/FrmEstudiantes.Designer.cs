@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEstudiantes));
-            this.button5 = new System.Windows.Forms.Button();
+            this.Btn_Consultar = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -56,14 +56,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button5
+            // Btn_Consultar
             // 
-            this.button5.Location = new System.Drawing.Point(550, 101);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(52, 23);
-            this.button5.TabIndex = 45;
-            this.button5.Text = "Buscar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Btn_Consultar.Location = new System.Drawing.Point(550, 101);
+            this.Btn_Consultar.Name = "Btn_Consultar";
+            this.Btn_Consultar.Size = new System.Drawing.Size(52, 23);
+            this.Btn_Consultar.TabIndex = 45;
+            this.Btn_Consultar.Text = "Buscar";
+            this.Btn_Consultar.UseVisualStyleBackColor = true;
+            this.Btn_Consultar.Click += new System.EventHandler(this.Btn_Consultar_Click);
             // 
             // textBox8
             // 
@@ -162,6 +163,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(618, 329);
             this.dataGridView1.TabIndex = 34;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // textBox7
             // 
@@ -254,7 +256,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 511);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.Btn_Consultar);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -289,7 +291,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Btn_Consultar;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
